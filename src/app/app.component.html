@@ -1,1 +1,4 @@
-<app-header>Such Header</app-header>
+<!-- <app-header>Such Header</app-header> -->
+<input [(ngModel)]="searchString">
+<app-auto-suggestion [(searchString)]="searchString"></app-auto-suggestion>
+{{searchString}}
