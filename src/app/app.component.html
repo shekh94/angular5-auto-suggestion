@@ -1,4 +1,13 @@
 <!-- <app-header>Such Header</app-header> -->
-<input [(ngModel)]="searchString">
-<app-auto-suggestion [(searchString)]="searchString"></app-auto-suggestion>
-{{searchString}}
+search app<input [(ngModel)]="searchString">
+<app-auto-suggestion [(chosenValue)]="chosenValue" [optionsArray]="optionsArray" [searchString]="searchString"></app-auto-suggestion>
+<div>
+    app.component:
+    <div>
+        searchString: {{searchString}}
+
+    </div>
+    <div>
+        chosenValue: {{chosenValue}}
+    </div>
+</div>

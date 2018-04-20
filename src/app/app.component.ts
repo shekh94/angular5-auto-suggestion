@@ -8,4 +8,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
+  chosenValue: any;
+  optionsArray: string[];
 }
